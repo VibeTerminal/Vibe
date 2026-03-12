@@ -26,6 +26,8 @@ jobs:
       - name: Install dependencies
         run: npm install
       - name: Build site
+        env:
+          VITE_BASE_PATH: ${{ format('/{0}/', github.event.repository.name) }}
         run: npm run build
       - name: Setup Pages
         uses: actions/configure-pages@v5

@@ -26,4 +26,4 @@ The workflow installs dependencies with `npm install`, builds the Vite app, and 
 
 ## Why Pages works for repository sites
 
-`vite.config.js` sets `base` automatically in GitHub Actions using the repository name, so asset URLs are generated correctly for `https://<user>.github.io/<repo>/`.
+`vite.config.js` supports `VITE_BASE_PATH`, and the workflow passes `/${repo}/` during CI builds so asset URLs are generated correctly for `https://<user>.github.io/<repo>/`.
