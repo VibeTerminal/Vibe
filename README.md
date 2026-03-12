@@ -22,7 +22,7 @@ npm run preview
 2. In repository settings, go to **Pages** and set **Source** to **GitHub Actions**.
 3. Push to `main` or `work` to trigger deployment.
 
-The workflow builds the Vite app and publishes the `dist` folder to GitHub Pages.
+The workflow installs dependencies with `npm install`, builds the Vite app, and publishes the `dist` folder to GitHub Pages.
 
 ## Why Pages works for repository sites
 
