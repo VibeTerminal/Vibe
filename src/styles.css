@@ -1,0 +1,93 @@
+:root {
+  color-scheme: dark;
+  font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+  background: #070a12;
+  color: #e8eeff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: radial-gradient(circle at 20% 0%, #1d2b4f, #070a12 55%);
+}
+
+.app {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2rem 1.25rem 3rem;
+}
+
+.hero {
+  margin-bottom: 2rem;
+}
+
+.badge {
+  display: inline-flex;
+  padding: 0.35rem 0.75rem;
+  border: 1px solid #79a5ff66;
+  border-radius: 999px;
+  color: #9ec2ff;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+}
+
+h1 {
+  margin: 1rem 0 0.7rem;
+  line-height: 1.2;
+  font-size: clamp(1.9rem, 4vw, 2.8rem);
+}
+
+h2 {
+  margin: 1.25rem 0;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 1rem;
+}
+
+.card {
+  border: 1px solid #7ea0ff33;
+  background: linear-gradient(180deg, #10172b, #0c1222);
+  border-radius: 14px;
+  padding: 1rem;
+  box-shadow: 0 12px 35px #00000055;
+}
+
+.card span {
+  color: #9ec2ff;
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.card h3 {
+  margin: 0.45rem 0 0.6rem;
+}
+
+.card p {
+  color: #c9d5f7;
+  min-height: 3.5rem;
+}
+
+.card a {
+  color: #9ec2ff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.card a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  margin-top: 2.5rem;
+  color: #95a7d6;
+  text-align: center;
+  font-size: 0.92rem;
+}
